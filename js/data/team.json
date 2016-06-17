@@ -1,51 +1,33 @@
 {
     "members": [{
-        "name": "Yuvraj Singh Bawa",
-        "fb": "https://www.facebook.com/rajayuv",
-        "twt": "https://twitter.com/iamyuvraj",
-        "email": "webmaster@engineer.org.in",
-        "des": "Web Developer"
+        "name": "Samir Singh",
+        "img": "samir.jpg",
+        "fb": "https://www.facebook.com/samir.singh.12327",
+        "email": "convenor@engineer.org.in",
+        "des": "Convenor"
+    },{
+        "name": "Abhilash Krishnan",
+        "img": "abhilash.jpg",
+        "fb": "https://www.facebook.com/abhilash.krishnan.984",
+        "email": "chiefcoordinator@engineer.org.in",
+        "des": "Chief Coordinator"
+    },{
+        "name": "Ravi Hasyagar",
+        "img": "ravi.jpg",
+        "fb": "https://www.facebook.com/ravi.hasyagar",
+        "email": "exhibitions@engineer.org.in",
+        "des": "Exhibitions Head"
     },{
         "name": "Yuvraj Singh Bawa",
+        "img": "yuvraj.jpg",
         "fb": "https://www.facebook.com/rajayuv",
-        "twt": "https://twitter.com/iamyuvraj",
         "email": "webmaster@engineer.org.in",
-        "des": "Web Developer"
+        "des": "Website Lead"
     },{
-        "name": "Yuvraj Singh Bawa",
+        "name": "Yogesh Ghaturle",
+        "img": "yuvraj.jpg",
         "fb": "https://www.facebook.com/rajayuv",
-        "twt": "https://twitter.com/iamyuvraj",
         "email": "webmaster@engineer.org.in",
-        "des": "Web Developer"
-    },{
-        "name": "Yuvraj Singh Bawa",
-        "fb": "https://www.facebook.com/rajayuv",
-        "twt": "https://twitter.com/iamyuvraj",
-        "email": "webmaster@engineer.org.in",
-        "des": "Web Developer"
-    },{
-        "name": "Yuvraj Singh Bawa",
-        "fb": "https://www.facebook.com/rajayuv",
-        "twt": "https://twitter.com/iamyuvraj",
-        "email": "webmaster@engineer.org.in",
-        "des": "Web Developer"
-    },{
-        "name": "Yuvraj Singh Bawa",
-        "fb": "https://www.facebook.com/rajayuv",
-        "twt": "https://twitter.com/iamyuvraj",
-        "email": "webmaster@engineer.org.in",
-        "des": "Web Developer"
-    },{
-        "name": "Yuvraj Singh Bawa",
-        "fb": "https://www.facebook.com/rajayuv",
-        "twt": "https://twitter.com/iamyuvraj",
-        "email": "webmaster@engineer.org.in",
-        "des": "Web Developer"
-    },{
-        "name": "Yuvraj Singh Bawa",
-        "fb": "https://www.facebook.com/rajayuv",
-        "twt": "https://twitter.com/iamyuvraj",
-        "email": "webmaster@engineer.org.in",
-        "des": "Web Developer"
+        "des": "Website Lead"
     }]
 }

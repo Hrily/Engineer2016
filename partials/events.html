@@ -1,0 +1,149 @@
+<article ng-controller="eventsCtrl">
+    <style>
+    .animatedSVG {
+        opacity: 0;
+    }
+    </style>
+    <div class="container-fluid main-content-container">
+        <div class="row">
+            <div class="col-lg-12 text-center" style="padding:20px !important; padding-top:0 !important;">
+                <h1 class="wow slideInDown"><b>EVENTS</b></h1>
+                <hr />
+            </div>
+        </div>
+        <div class="row row-eq-height text-center" style="padding:20px !important; padding-top:0 !important;">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-10 col-md-10" style="margin:10px;margin-top:0px;">
+                <ul class="carousel-indicators-tabs">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">CHEM</li>
+                    <li data-target="#myCarousel" data-slide-to="1">COMPS</li>
+                    <li data-target="#myCarousel" data-slide-to="2">BIZ</li>
+                    <li data-target="#myCarousel" data-slide-to="3">MINING</li>
+                    <li data-target="#myCarousel" data-slide-to="4">SCE</li>
+                    <li data-target="#myCarousel" data-slide-to="5">ASTRO</li>
+                    <li data-target="#myCarousel" data-slide-to="6">MECH</li>
+                    <li data-target="#myCarousel" data-slide-to="7">CIVIL</li>
+                    <li data-target="#myCarousel" data-slide-to="8">MATERIALS</li>
+                    <li data-target="#myCarousel" data-slide-to="9">TRONIX</li>
+                </ul>
+                <div id="myCarousel" class="carousel slide eq-height" data-ride="carousel" style="margin-top: 20px;">
+                    <!-- Indicators -->
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active chemSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/chem.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>CHEMICAL EVENTS</strong></h2>
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item compSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/comp.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>COMPUTER EVENTS</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item bizSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/biz.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>BIZ EVENTS</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item miningSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/mining.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>MINING EVENTS</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item sceSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/sce.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>SOCIALLY CONSCIOUS ENGINEERING</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item astroSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/astro.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>ASTRO EVENTS</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mechSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/mech.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>MECHANICAL EVENTS</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item civilSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/civil.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>CIVIL EVENTS</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item matSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/mat.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>MATERIALS EVENTS</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item tronixSVG">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <section ng-include="'partials/SVG/tronix.html'"></section>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="wow fadeInUp"><strong>ELECTRONICS EVENTS</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="fa fa-lg fa-arrow-left carouselCtrl" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="fa fa-lg fa-arrow-right carouselCtrl" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                </div>
+            </div>
+        </div>
+</article>
