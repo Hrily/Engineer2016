@@ -1,0 +1,27 @@
+﻿{
+    "members": [{
+        "name": "Samir Singh",
+        "img": "samir.jpg",
+        "fb": "https://www.facebook.com/samir.singh.12327",
+        "email": "convenor@engineer.org.in",
+        "des": "Convenor"
+    },{
+        "name": "Abhilash Krishnan",
+        "img": "abhilash.jpg",
+        "fb": "https://www.facebook.com/abhilash.krishnan.984",
+        "email": "chiefcoordinator@engineer.org.in",
+        "des": "Chief Coordinator"
+    },{
+        "name": "Ravi Hasyagar",
+        "img": "ravi.jpg",
+        "fb": "https://www.facebook.com/ravi.hasyagar",
+        "email": "exhibitions@engineer.org.in",
+        "des": "Exhibitions Head"
+    },{
+        "name": "Yuvraj Singh Bawa",
+        "img": "yuvraj.jpg",
+        "fb": "https://www.facebook.com/rajayuv",
+        "email": "webmaster@engineer.org.in",
+        "des": "Website Lead"
+    }]
+}

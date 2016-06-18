@@ -1,0 +1,36 @@
+﻿<article ng-controller="contactCtrl">
+    <style>
+    .animatedSVG {
+        opacity: 0;
+    }
+    </style>
+    <div class="container-fluid main-content-container">
+        <div class="row">
+            <div class="col-lg-12 text-center" style="padding:20px !important; padding-top:0 !important;">
+                <h1 class="wow slideInDown"><b>CONTACT US</b></h1>
+                <hr />
+            </div>
+        </div>
+       <div class="row text-center" style="padding:20px !important;"  ng-repeat="member in members track by $index" ng-if="$index % 4 ==0">
+               <div class="col-lg-3 col-md-3" ng-repeat="i in [$index, $index + 1, $index + 2,$index+3]">
+                    <div ng-if="members[i]!=undefined">
+                       <div class="hexagon" style="background: url('images/team/{{::members[i].img}}');background-size:cover">
+                            <div class="content"></div>
+                       </div>
+                       <h4 class="wow fadeInDown contact-name" ><b ng-bind="members[i].name"></b></h4>
+                       <h5 class="wow fadeInUp contact-des"><b ng-bind="members[i].des"></b></h5>
+
+                       <div class="social-contact">
+                              <ul class="social-buttons">
+                                <li><a ng-href='{{::members[i].fb}}' class="social-btn"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a ng-href='https://mail.google.com/mail/?view=cm&fs=1&to={{::members[i].email}}' target="_blank" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                              </ul>
+                       </div>
+
+                   </div>
+               </div>
+                
+       </div>
+        
+</article>

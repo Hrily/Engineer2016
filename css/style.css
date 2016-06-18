@@ -3,8 +3,8 @@
 html,
 body {
     height: 100%;
-    font-family: 'Lato';
-    background: #ECECEC;
+    font-family: 'Varela Round', sans-serif,"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #02021b;
 }
 
 
@@ -61,7 +61,7 @@ body {
 }
 
 .sidebar-toggle .icon-bar {
-    background: black;
+    background: white;
     display: block;
     width: 22px;
     height: 2px;
@@ -429,10 +429,11 @@ body {
     font-size: 16px;
     margin-right: 15px;
     font-weight: bold;
+    color:White
 }
 
 .topbar li a {
-    color: black;
+    color: white;
     transition: all 0.4s;
 }
 
@@ -525,3 +526,98 @@ hr {
         background: black;
     }
     }
+    
+
+.hexagon {
+			position: relative;
+			display: inline-block;
+			width: 205px;
+			height: 233px;
+			overflow: hidden;
+			color: #fff;
+			-webkit-mask-image: url('../images/hexagon.jpg');
+			text-align: center;
+			
+		}
+		.hexagon .content{
+			height: 186px;
+			width: 186px;
+			margin: auto;
+			margin-top: 16px;
+			
+		}
+		.hexagon a {
+			cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
+		}
+
+.contact-des
+{
+    color:grey;
+}
+	
+/*.contact-name::after {
+    content: " ";
+    border: solid 2px #3dc9b3;
+    display: block;
+    width: 35px;
+    margin: 25px auto;
+}
+*/
+.team img { margin-bottom: 40px; }
+ul.social-buttons { list-style: none; margin: 0; padding: 0; }
+ul.social-buttons li { display: inline-block; margin-right: 10px; }
+ul.social-buttons li:last-child { margin-right: 0; }
+.social-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #242830; display: inline-block; color: #fff; font-size: 17px; line-height: 40px; text-align: center; }
+.social-btn:hover, .social-btn:focus { background: #3dc9b3; color: #fff; }
+.social-contact { margin-top: 25px }
+
+
+#ring	{
+	 opacity:0.7;
+	 width:500px !important;
+	 height:500px !important;
+}
+
+#ring {
+	height:500px;
+	
+	-webkit-animation: spin 5s infinite linear;
+	
+}
+
+
+
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+
+#ring:hover {
+	transition:all 1s;
+	opacity:1;
+}
+
+
+
+/*
+#penrose	{
+	height:150px;
+	margin-top:180px;
+}
+*/
+
+#penrose:hover {
+	transition:all 1s;
+	transform:rotate(-360deg);
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform:rotate(-360deg);
+}
+
+
+
+
+@font-face {
+  font-family: 'fontengi';
+  src: url('../assets/engifont/spaceage.eot?') format('eot'), url('../assets/engifont/spaceage.woff') format('woff'), url('../assets/engifont/spaceage.ttf') format('truetype');
+}
