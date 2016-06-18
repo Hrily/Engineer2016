@@ -4,7 +4,7 @@ html,
 body {
     height: 100%;
     font-family: 'Varela Round', sans-serif,"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #02021b;
+    background: #00000b;
 }
 
 
@@ -311,7 +311,7 @@ body {
 }
 
 #footer {
-    background: #2C3E50;
+    background: #1D2228;
     margin-top: 20px;
 }
 
@@ -555,6 +555,10 @@ hr {
     color:grey;
 }
 	
+.contact-name
+{
+    color:White;
+}
 /*.contact-name::after {
     content: " ";
     border: solid 2px #3dc9b3;
@@ -620,4 +624,9 @@ ul.social-buttons li:last-child { margin-right: 0; }
 @font-face {
   font-family: 'fontengi';
   src: url('../assets/engifont/spaceage.eot?') format('eot'), url('../assets/engifont/spaceage.woff') format('woff'), url('../assets/engifont/spaceage.ttf') format('truetype');
+}
+
+.pageHeading
+{
+    color:White;
 }
