@@ -4,7 +4,7 @@ html,
 body {
     height: 100%;
     font-family: 'Varela Round', sans-serif,"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #00000b;
+    background: #d4e7e6;
 }
 
 
@@ -629,4 +629,11 @@ ul.social-buttons li:last-child { margin-right: 0; }
 .pageHeading
 {
     color:White;
+}
+.event-link {
+    color:#2c3e50;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
 }
