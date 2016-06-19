@@ -678,3 +678,17 @@ ul.social-buttons li:last-child { margin-right: 0; }
 .tab-content {
     margin:10px;
 }
+.events-pg {
+    padding:20px !important; padding-top:0 !important;
+}
+.events-pg-car{
+    margin:10px;margin-top:0px;
+}
+@media(max-width:400px) {
+    .events-pg {
+        padding:0 !important;
+    }
+    .events-pg-car{
+        margin:0px;
+    }
+}
