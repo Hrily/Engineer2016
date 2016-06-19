@@ -420,7 +420,7 @@ body {
 .topbar {
     display: inline-block;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .topbar li {
@@ -439,7 +439,7 @@ body {
 
 .topbar li a:hover {
     text-decoration: none;
-    color: #555;
+    color: #d1d1d1;
 }
 
 hr {
@@ -482,7 +482,7 @@ hr {
 
 .carousel-inner {
     background: white;
-    border-radius: 20px;
+    box-shadow: 0 0 5px #777;
 }
 
 .carousel-indicators-tabs li{
@@ -495,13 +495,14 @@ hr {
     border-radius: 0;
     display: inline-block;
     margin:-1.5px !important;
-    margin-bottom:20px;
+    margin-bottom:10px;
     cursor:pointer;
 }
 .carousel-indicators-tabs {
     left:0%;
     width:100%;
     padding-left:0;
+        margin-bottom: 2px;
 }
 .carousel-indicators-tabs li:hover{
         background: #f1f1f1;
@@ -510,7 +511,7 @@ hr {
         background: #f1f1f1;
     }
 .carousel-indicators-tabs {
-    top:0px !important;
+    top:10px !important;
 }
 @media(max-width:992px) {
     .carousel-indicators-tabs li{
