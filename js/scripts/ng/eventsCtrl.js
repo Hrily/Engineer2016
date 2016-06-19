@@ -18,23 +18,23 @@
 
         function activate() {
             $('.carousel').carousel({
-    interval: false
-});
-//             $( document ).ready(function() {
-//     var widths = $(".carousel-indicators.tabs>li").map(function() {
-//         return $(this).width();
-//     }).get(),
+                interval: false
+            });
+            //             $( document ).ready(function() {
+            //     var widths = $(".carousel-indicators.tabs>li").map(function() {
+            //         return $(this).width();
+            //     }).get(),
 
-//     maxWidth = Math.max.apply(null, widths);
+            //     maxWidth = Math.max.apply(null, widths);
 
-//     $(".carousel-indicators.tabs>li").attr('style', 'width:'+ (maxWidth+15) +'px !important');
+            //     $(".carousel-indicators.tabs>li").attr('style', 'width:'+ (maxWidth+15) +'px !important');
 
-// });
-            $('.carousel-indicators-tabs>li').on('click', function(){
+            // });
+            $('.carousel-indicators-tabs>li').on('click', function() {
                 $('.carousel-indicators-tabs>li').removeClass('active');
                 $(this).addClass('active');
             });
-            
+
             $('.animatedSVG').css({ opacity: 0 });
             $('.chemical').velocity('transition.slideDownIn', {
                 delay: 1000
@@ -67,9 +67,9 @@
                 $('.animatedSVG').css({ opacity: 0 });
             });
             $('#myCarousel').bind('slid.bs.carousel', function(e) {
-                
-                if ($('div.active').eq(0).hasClass('chemSVG')) {
-                    
+
+                if ($('.carousel-inner>div.active').eq(0).hasClass('chemSVG')) {
+
                     $('.chemical').velocity('transition.slideDownIn', {
                         delay: 1000
                     });
@@ -97,17 +97,17 @@
                     $('.timer').velocity({ opacity: 1 }, {
                         delay: 700
                     });
-                } else if ($('div.active').eq(0).hasClass('miningSVG')) {
-                    $('.miningCart').velocity('transition.slideRightIn', {delay:0});
-                } else if ($('div.active').eq(0).hasClass('sceSVG')) {
-                    $('.hill').velocity('transition.slideRightIn', {delay:0});
-                    $('.mountain').velocity('transition.slideLeftIn', {delay:500});
-                    $('.trees').velocity('transition.slideUpIn', {delay:700});
-                    $('.sun').velocity('transition.expandIn', {delay:400});
-                    $('.clouds').velocity('transition.slideLeftIn', {delay:400});
-                    $('.hand').velocity('transition.slideRightIn', {delay:0, duration:1000});
-                    $('.rain').velocity('transition.slideUpIn', {delay:1200});
-                } else if ($('div.active').eq(0).hasClass('compSVG')) {
+                } else if ($('.carousel-inner>div.active').eq(0).hasClass('miningSVG')) {
+                    $('.miningCart').velocity('transition.slideRightIn', { delay: 0 });
+                } else if ($('.carousel-inner>div.active').eq(0).hasClass('sceSVG')) {
+                    $('.hill').velocity('transition.slideRightIn', { delay: 0 });
+                    $('.mountain').velocity('transition.slideLeftIn', { delay: 500 });
+                    $('.trees').velocity('transition.slideUpIn', { delay: 700 });
+                    $('.sun').velocity('transition.expandIn', { delay: 400 });
+                    $('.clouds').velocity('transition.slideLeftIn', { delay: 400 });
+                    $('.hand').velocity('transition.slideRightIn', { delay: 0, duration: 1000 });
+                    $('.rain').velocity('transition.slideUpIn', { delay: 1200 });
+                } else if ($('.carousel-inner>div.active').eq(0).hasClass('compSVG')) {
                     $('.table').velocity('transition.slideRightIn', { delay: 0 });
                     $('.man').velocity('transition.slideLeftIn', { delay: 200 });
                     $('.desktop').velocity('transition.slideUpIn', { delay: 100 });
@@ -115,29 +115,29 @@
                     $('.page2').velocity('transition.expandIn', { delay: 400 });
                     $('.page3').velocity('transition.expandIn', { delay: 400 });
                     $('.cup').velocity('transition.slideLeftIn', { delay: 1000 });
-                } else if ($('div.active').eq(0).hasClass('bizSVG')) {
-                    $('.bizHand').velocity('transition.slideLeftIn', {delay:100});
-                    $('.bizCloud').velocity('transition.slideUpIn', {delay:100});
-                    $('.bizItems').velocity('transition.slideDownIn', {delay:100});
-                    $('.dart').velocity('transition.slideLeftIn', {delay:100});
-                    $('.bizGraph').velocity('transition.slideLeftIn', {delay:100});
-                    $('.bizCoin').velocity('transition.slideLeftIn', {delay:100});
-                    $('.bizArrow').velocity('transition.slideRightIn', {delay:600});
-                } else if ($('div.active').eq(0).hasClass('astroSVG')) {
-                    $('.satellite').velocity('transition.slideUpIn', {delay:400});
-                    $('.astronaut').velocity('transition.slideRightIn', {delay:700});
-                    $('.asteroid').velocity('transition.expandIn', {delay:1000});
-                    $('.shuttle').velocity('transition.slideDownIn', {delay:0});
-                } else if ($('div.active').eq(0).hasClass('mechSVG')) {
-                    $('.animatedSVG').velocity({opacity:1});
-                } else if ($('div.active').eq(0).hasClass('civilSVG')) {
-                    $('.blueprint').velocity('transition.slideRightIn', {delay:0});
-                    $('.plans').velocity('transition.slideLeftIn', {delay:200});
-                    $('.tools').velocity('transition.slideUpIn', {delay:600});
-                    $('.bulb').velocity('transition.expandIn', {delay:800});
-                    $('.engineer').velocity('transition.slideDownIn', {delay:400});
-                } else if ($('div.active').eq(0).hasClass('matSVG')) {
-                    $('.molecules').velocity('transition.expandIn', {delay:0});
+                } else if ($('.carousel-inner>div.active').eq(0).hasClass('bizSVG')) {
+                    $('.bizHand').velocity('transition.slideLeftIn', { delay: 100 });
+                    $('.bizCloud').velocity('transition.slideUpIn', { delay: 100 });
+                    $('.bizItems').velocity('transition.slideDownIn', { delay: 100 });
+                    $('.dart').velocity('transition.slideLeftIn', { delay: 100 });
+                    $('.bizGraph').velocity('transition.slideLeftIn', { delay: 100 });
+                    $('.bizCoin').velocity('transition.slideLeftIn', { delay: 100 });
+                    $('.bizArrow').velocity('transition.slideRightIn', { delay: 600 });
+                } else if ($('.carousel-inner>div.active').eq(0).hasClass('astroSVG')) {
+                    $('.satellite').velocity('transition.slideUpIn', { delay: 400 });
+                    $('.astronaut').velocity('transition.slideRightIn', { delay: 700 });
+                    $('.asteroid').velocity('transition.expandIn', { delay: 1000 });
+                    $('.shuttle').velocity('transition.slideDownIn', { delay: 0 });
+                } else if ($('.carousel-inner>div.active').eq(0).hasClass('mechSVG')) {
+                    $('.animatedSVG').velocity({ opacity: 1 });
+                } else if ($('.carousel-inner>div.active').eq(0).hasClass('civilSVG')) {
+                    $('.blueprint').velocity('transition.slideRightIn', { delay: 0 });
+                    $('.plans').velocity('transition.slideLeftIn', { delay: 200 });
+                    $('.tools').velocity('transition.slideUpIn', { delay: 600 });
+                    $('.bulb').velocity('transition.expandIn', { delay: 800 });
+                    $('.engineer').velocity('transition.slideDownIn', { delay: 400 });
+                } else if ($('.carousel-inner>div.active').eq(0).hasClass('matSVG')) {
+                    $('.molecules').velocity('transition.expandIn', { delay: 0 });
                 }
             });
 

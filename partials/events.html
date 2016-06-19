@@ -1,12 +1,4 @@
 <article ng-controller="eventsCtrl">
-    <style>
-    .animatedSVG {
-        opacity: 0;
-    }
-    .btn{
-    	margin-bottom: 10px;
-    }
-    </style>
     <div class="container-fluid main-content-container">
         <div class="row">
             <div class="col-lg-12 text-center" style="padding:20px !important; padding-top:0 !important;">
@@ -38,11 +30,27 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/chem.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6" style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>CHEMICAL EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#chem_contraption">Contraption</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#chem_breakdown">Chemical Breakdown</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#chem_industry">Industry Defined Problem</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#contraption">Contraption</a></li>
+                                      <li><a data-toggle="tab" href="#chem_breakdown">Chemical Breakdown</a></li>
+                                      <li><a data-toggle="tab" href="#IDP">IDP</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="contraption" class="tab-pane fade in active">
+                                        
+                                        <p>Science always looks complex from outside. But when we venture into its core, we realize it just a succession of the simple, interrelated and small concepts which formed into a complex one. Here, at Contraption, we call upon the participants to apply these small concepts to give birth to a chemically functional robot. It should be able to perform basic and specific functions applicable to our daily lives.</p>
+                                      </div>
+                                      <div id="chem_breakdown" class="tab-pane fade">
+                                        
+                                        <p>The flagship series of discipline specific quizzes, here we test the engineering knowledge and basic concepts of the teams as that will be the deciding factor at the end of the day: which team is better than the best and gets those concepts right into place. This popular series has seen an amazing participation in almost all the fields, especially Chemical Engineering.</p>
+                                      </div>
+                                      <div id="IDP" class="tab-pane fade">
+                                        <p>IDP, where the finest minds of chemical engineering come together to solve some of the most mindboggling problems by india’s premier industries. The previous editions had industries like MRPL, MCF provide very challenging problem statements. This edition we intend to go one step further.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -51,14 +59,39 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/comp.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>COMPUTER EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#comps_inscription">Inscription</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#comps_ectf">ECTF</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#comps_kk">Kode Kombat</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#comps_marathon">Marathon</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#comps_rectify">Rectify</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#comps_synth">SynthEssence</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#inscription">Inscription</a></li>
+                                      <li><a data-toggle="tab" href="#ECTF">ECTF</a></li>
+                                      <li><a data-toggle="tab" href="#kode_kombat">Kode Kombat</a></li>
+                                      <li><a data-toggle="tab" href="#marathon">Marathon</a></li>
+                                      <li><a data-toggle="tab" href="#rectify">Rectify</a></li>
+                                      <li><a data-toggle="tab" href="#syn">Synthessence</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="inscription" class="tab-pane fade in active">
+                                        
+                                        <p>An international online programming contest with teams from Microsoft, Yahoo and Stanford as previous participants is sure to attract thousands of coders. Participate in this event and prove your talent in designing efficient algorithms ad writing working codes.</p>
+                                      </div>
+                                      <div id="ECTF" class="tab-pane fade">
+                                        
+                                        <p>ECTF is a jeopardy style Capture the Flag event conducted online. Here the participant is evaluated on his/her ability to detect and manipulate security flaws and exploits. ECTF provides a way to effectively merge your theoretical and applied aspects of computer science through cryptography, reverse engineering and web application based challenges.</p>
+                                      </div>
+                                      <div id="kode_kombat" class="tab-pane fade">
+                                        <p>Kode Komabt is a competition mixed with fun and fervor that takes you through three rounds of an unexpected package of coding, decoding and creativity. Thorough analysis of the problem, adept strategizing and proficient translation to code is all you need to combat the other coders. </p>
+                                      </div>
+                                      <div id="marathon" class="tab-pane fade">
+                                        <p>For those of you who love computer science but has inadequate knowledge, Marathon is the go-to event. It tests your teamwork, your ability to solve tricky yet simple computer science problems and also your capability to absorb the information and implement them on a real world scale.</p>
+                                      </div>
+                                      <div id="rectify" class="tab-pane fade">
+                                        <p>A working knowledge of C++ or C is all that the participants need to compete in Rectify. A sound background in these programming languages will serve as your sword as you debug programs and establish your skill in logically analyzing a given code.</p>
+                                      </div>
+                                      <div id="syn" class="tab-pane fade">
+                                        <p>A once in a lifetime opportunity to experience the essence of synthesizing sense out of data. Through SynthEssence, Engineer is on the search for the data scientist in each participant as the teams get challenged on proposing, implementing, and presenting the use case.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -67,10 +100,23 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/biz.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>BIZ EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#biz_ad">Ad-venture</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#biz_ms">Mock-Stock</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#ad_venture">Ad-venture</a></li>
+                                      <li><a data-toggle="tab" href="#mock_stock">Mock Stock</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="ad_venture" class="tab-pane fade in active">
+                                        
+                                        <p>“Promise, large promise, is the soul of an advertisement”-Samuel Johnson. On these lines, this event “Ad-venture” ventures out to pick out one of the most promising ad-campaigns where the toughest competition exists when it comes to the ad industry, the crux of the contest being to look out for one’s talent of embedding ideas into media.</p>
+                                      </div>
+                                      <div id="mock_stock" class="tab-pane fade">
+                                        
+                                        <p> The big world is never complete without the perfect doze of the Dalal Street. And doing justice to this fact is what this contest banks upon. The perfect simulation of the dynamic schedule of the stock market makes the smart folks react their brains out for all the 4 days of Engineer.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -79,12 +125,31 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/mining.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>MINING EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#min_mb">Mind Bend</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#min_sub">Substantivo</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#min_mt">Mining Tycoon</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#min_tm">Tech Mining</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#mind_bend">Mind Bend</a></li>
+                                      <li><a data-toggle="tab" href="#substantivo">Substantivo</a></li>
+                                      <li><a data-toggle="tab" href="#mining_tycoon">Mining Tycoon</a></li>
+                                      <li><a data-toggle="tab" href="#tech_mining">Tech Mining</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="mind_bend" class="tab-pane fade in active">
+                                        
+                                        <p>A quiz exclusively designed to “dig out” the treasure of knowledge acquired in the wide arena of mining and its related applications.</p>
+                                      </div>
+                                      <div id="substantivo" class="tab-pane fade">
+                                        
+                                        <p>Basically, a surveying based events where we try to create awareness about the role of surveying in the exploration projects by testing the logical ability of the contestants. We will be elaborating the levels by testing the conceptual and the practical clarity of surveying.</p>
+                                      </div>
+                                      <div id="mining_tycoon" class="tab-pane fade">
+                                        <p>This event takes you through a whole roundabout through an amazing & unique relationship between Mining & Management, which dates back to the Industrial Revolution. Contestants are put to analyze a certain case, appreciate the interdependence of the two and come up with the best possible solution surpassing all exceptional cases .The most feasible solution will be rewarded.</p>
+                                      </div>
+                                      <div id="tech_mining" class="tab-pane fade">
+                                        <p>Technology has gone a mile ahead in the recent times, by linking software to the core fields. Similar relation exists between Mining application and software which took birth in the form of simulation analysis or simulation software. This event celebrates this relation in the form of workshop, which aims at making students aware of the trends and the working of simulation software. It encourages the student’s mind to the field of software analysis and its applications in mining.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -93,12 +158,31 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/sce.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
-                                    <h2 class="wow fadeInUp"><strong>SOCIALLY CONSCIOUS ENGINEERING</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#sce_lw">Last Word</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#sce_uw">Umbrella Walk</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#sce_sparsh">Sparsh</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#sce_sl">Sky Lanterns</a><br/>
+                                <div class="col-lg-6"  style="text-align:justify !important;">
+                                    <h2 class="wow fadeInUp"  style="text-align:left !important;"><strong>SOCIALLY CONSCIOUS ENGINEERING</strong></h2>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#last_word">Last Word</a></li>
+                                      <li><a data-toggle="tab" href="#um_walk">Umbrella Walk</a></li>
+                                      <li><a data-toggle="tab" href="#sparsh">Sparsh</a></li>
+                                      <li><a data-toggle="tab" href="#sky_lantern">Sky Lanterns</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="last_word" class="tab-pane fade in active">
+                                        
+                                        <p>Sit back and watch in awe as eminent personalities from diverse fields discuss issues pertaining to education, entrepreneurship, and social responsibility of engineers. The panelists and the students get to exchange a good amount of ideas in the final open session on topic likes Government funding for higher education, Social Responsibility, The Indian Government’s Involvement in public higher education and many more. Media coverage (national dailies and television channels) of the event is a high possibility and the sponsors can attain nationwide publicity.</p>
+                                      </div>
+                                      <div id="um_walk" class="tab-pane fade">
+                                        
+                                        <p>Engineer is premiering Umbrella Walk which, as the name suggests, is a morning walk with an umbrella. Though the act is as simple as it can get, it is embedded with a deep meaning. It is Engineer’s medallion for showing support to a current socially relevant issue, thereby instilling in all empathy to our fellow beings. The sponsors will be highly deemed for being the helping hand to one of the flagship events of Engineer-16. </p>
+                                      </div>
+                                      <div id="sparsh" class="tab-pane fade">
+                                        <p>Engineer is creating a shift in consciousness by organizing a tree plantation drive around NITK under the name of Sparsh. Not only is this event an initiative for a greener campus, but also a silent protest against deforestation and the increasing hazardous nature of pollution. Sparsh provides an open platform to all the nature lovers out there to volunteer for planting saplings and giving them the necessary care. A month before the event, the departments of the college will be invited to plant saplings and tend to them. </p>
+                                      </div>
+                                      <div id="sky_lantern" class="tab-pane fade">
+                                        <p>The phenomenal parade of lights is definitely a treat to the eye of the beholders. Illuminating the darkest of nights and proving that light can always be found during dark times, Team Engineer sees these sky lanterns as a mark of respect or support to a social movement or cause. Last year, the lanterns were released as a tribute to the visionary, Dr.A.P.J.Abdul Kalam. </p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -107,13 +191,35 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/astro.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>ASTRO EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#astro_sn">Stary Night</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#astro_sw">Star Wars</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#astro_orbiter">Orbiter</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#astro_end">Endeavour</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#astro_anta">Antariksh</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#starry_night">Starry Night</a></li>
+                                      <li><a data-toggle="tab" href="#star_wars">Star Wars</a></li>
+                                      <li><a data-toggle="tab" href="#orbiter">Orbiter</a></li>
+                                      <li><a data-toggle="tab" href="#endeavour">Endeavour</a></li>
+                                      <li><a data-toggle="tab" href="#antariksh">Antariksh</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="starry_night" class="tab-pane fade in active">
+                                        
+                                        <p>Conducted on the Main Building Terrace, participants are given an opportunity to view the night sky through binoculars and a telescope. They are given a tour of the night sky, with narrations of tales of Greek Heroes of yore and why the constellations were named after them. Make sure you are present to have a chance to look at the rings of Saturn and the craters of the moon through the telescope!</p>
+                                      </div>
+                                      <div id="star_wars" class="tab-pane fade">
+                                        
+                                        <p>All the quizzers out there, make sure you don’t miss out on this! With questions related to Astronomy, Astrophysics and the occasional popular culture references, this quiz held every Engineer is one of the flagship events of the committee.</p>
+                                      </div>
+                                      <div id="orbiter" class="tab-pane fade">
+                                        <p>This is a flight simulator set up in a room along with a projector screen which has a simulation of flying a space shuttle. Walk into this room anytime during Engineer to try your hand at maneuvering a spacecraft. </p>
+                                      </div>
+                                      <div id="endeavour" class="tab-pane fade">
+                                        <p>In this event, participants are given a problem statement on the spot related to astronomy/astrophysics and are evaluated on their presence of mind and problem solving skills.</p>
+                                      </div>
+                                      <div id="antariksh" class="tab-pane fade">
+                                        <p>Another flagship event, this is an exhibition set up in a classroom in the Main Building. The working models attract large crowds, the major attraction being the rover ‘Infinity’ and a weighing machine which gives you your weight on different planets. Other exhibits include a Fibonacci Cubes Arrangement and Old Documents of the club recording astronomical observations.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -122,13 +228,35 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/mech.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>MECHANICAL EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#mech_bh">Bot Hockey</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#mech_wf">Wright Flight</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#mech_velocity">Velocity</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#mech_rw">Robo Wars</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#mech_pm">Perfect Machine</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#bot_hokey">Bot Hockey</a></li>
+                                      <li><a data-toggle="tab" href="#wright_flight">Wright Flight</a></li>
+                                      <li><a data-toggle="tab" href="#velocity">Velocity</a></li>
+                                      <li><a data-toggle="tab" href="#robo_wars">Robo Wars</a></li>
+                                      <li><a data-toggle="tab" href="#per_mach">Perfect Machine</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="bot_hokey" class="tab-pane fade in active">
+                                        
+                                        <p>Bot Hockey which began as a new event last year, has already won hearts of all bot enthusiasists. Being simple and interesting it consists of 2 bots trying to get a ball into opposite goal posts. This year with an attractive arena and lot of competitors bot hockey is sure to put audience into an amazing experience.</p>
+                                      </div>
+                                      <div id="wright_flight" class="tab-pane fade">
+                                        
+                                        <p>Captivating aero-enthusiasts from around the country, Wright Flight is an aero-modeling event where you have to build RC planes that can sustain themselves without the need for propulsion and carry out incredible tasks as they cut through the wind.</p>
+                                      </div>
+                                      <div id="velocity" class="tab-pane fade">
+                                        <p>Who knew an IC Engine race event could be the head turner of Engineer? A challenging track awaits the competitors as they race their cars to victory. The bewitching charm that roaring engines and squealing tires inflict on the spectators as the cars fly down the tracks is the triumph of this event.</p>
+                                      </div>
+                                      <div id="robo_wars" class="tab-pane fade">
+                                        <p>Robowars is the feature event of Engineer as the unique combo of engineering innovation and technical skill is put to display. The combating robots are indeed stimulating to watch as they showcase surprise attacks, intricate tactical maneuvers and many more amazing strategies. Get ready to witness the ultimate robotic battle of the year.</p>
+                                      </div>
+                                      <div id="per_mach" class="tab-pane fade">
+                                        <p>Perfect Machine has essentially been important part of Engineer considering technical skill, innovation that it demands from participants. Robots perform several tasks based on problem statements which gets tougher every round. This year with more interesting tasks Perfect Machine is going to entertain crowd.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -137,11 +265,27 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/civil.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>CIVIL EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#cv_nirvana">Nirvana</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#cv_colossus">Colossus</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#cv_fantasticity">Fantasticity</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#nirvana">Nirvana</a></li>
+                                      <li><a data-toggle="tab" href="#colossus">Colossus</a></li>
+                                      <li><a data-toggle="tab" href="#fantasticity">Fantasticity</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="nirvana" class="tab-pane fade in active">
+                                        
+                                        <p>In a few years, the world is bound to face an impending energy crisis. Still, we have not been depleted of solutions to emend this distress and pave the way for a sustainable future. Nirvana is the perfect staging area to present your ideas on reducing energy consumption and designing sustainable buildings.</p>
+                                      </div>
+                                      <div id="colossus" class="tab-pane fade">
+                                        
+                                        <p>Structures speak of their time and place but forever remain timeless. They project a grand mixture of innovation, analysis and unique identity. Colossus is an opportunity for all the mini engineers out there to come forward and display their skills in designing, modeling and testing structures.</p>
+                                      </div>
+                                      <div id="fantasticity" class="tab-pane fade">
+                                        <p>The world is awaiting a sustainable revolution that will have to take place rapidly and consciously on various domains. Sustainable development is the prime time need and we need to join hands to nurture nature for our future. Fantasticity provides the platform to unfurl your thoughts and actions on the effective utilisation of natural resources and to venture into a quest for renewable energy sources.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -150,12 +294,31 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/mat.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>MATERIALS EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#meta_magic">Meta Magic</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#meta_sem">SEM and TEM Expo</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#meta_cast">Casting Workshop</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#meta_mb">Mind Bend</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#meta_magic">Meta Magic</a></li>
+                                      <li><a data-toggle="tab" href="#st_expo">SEM&TEM Expo</a></li>
+                                      <li><a data-toggle="tab" href="#casting">Casting Workshop</a></li>
+                                      <li><a data-toggle="tab" href="#mind_bend2">Mind Bend</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="meta_magic" class="tab-pane fade in active">
+                                        
+                                        <p>This is a materials expo where you can find materials throw you up in the air. Materials which will stop the strongest from crumpling a bottle. Materials that float in the air or if you just want to taste a frozen banana, come join us at Meta magic.</p>
+                                      </div>
+                                      <div id="st_expo" class="tab-pane fade">
+                                        
+                                        <p>Watch materials in their nano scale. A metal, polymer or even dragon fly wings, watch up close, what they seem like in super high magnification using the most expensive machines on campus.</p>
+                                      </div>
+                                      <div id="casting" class="tab-pane fade">
+                                        <p>Liquid shiny metal poured into a mould and watch it turn to solid. There is more to it than what meets the eye. Join us at the casting workshop.</p>
+                                      </div>
+                                      <div id="mind_bend2" class="tab-pane fade">
+                                        <p>Do you know what material remembers it's shape even after heating it? Or a material which melts when you just touch it? Mind bend is materials committee's flagship event. Come tickle your minds and bend your brains in the world of materials.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,15 +327,43 @@
                                 <div class="col-lg-6">
                                     <section ng-include="'partials/SVG/tronix.html'"></section>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6"  style="text-align:justify !important;">
                                     <h2 class="wow fadeInUp"><strong>ELECTRONICS EVENTS</strong></h2>
-                                    <a class="event-link" data-toggle="modal" data-target="#tronix_symphony">Symphony</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#tronix_trail">Trailblazer</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#tronix_waltz">Waltz</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#tronix_auto">Automata</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#tronix_sim">Simplicity</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#tronix_fox">Fox Hunt</a><br/>
-                                    <a class="event-link" data-toggle="modal" data-target="#tronix_trade">Trade Off</a><br/>
+                                    <ul class="nav nav-tabs wow slideInUp">
+                                      <li class="active"><a data-toggle="tab" href="#symphony">Symphony</a></li>
+                                      <li><a data-toggle="tab" href="#trailblazer">Trailblazer</a></li>
+                                      <li><a data-toggle="tab" href="#waltz">Waltz</a></li>
+                                      <li><a data-toggle="tab" href="#automata">Automata</a></li>
+                                      <li><a data-toggle="tab" href="#simplicity">Simplicity</a></li>
+                                      <li><a data-toggle="tab" href="#fox_hunt">Fox Hunt</a></li>
+                                      <li><a data-toggle="tab" href="#trade_off">Trade Off</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                      <div id="symphony" class="tab-pane fade in active">
+                                        
+                                        <p>The flagship event of the committee which draws a huge crowd as well as a large pool of participants, the event requires the participants to come up with a controller built using electronic components which can manipulate the flow of water through an electrically controllable valve and the glowing of lights according to the music being played. Yes, you got it right. In layman words, participants need to make a musical fountain in which water dances to the tunes played with synchronized lighting.</p>
+                                      </div>
+                                      <div id="trailblazer" class="tab-pane fade">
+                                        
+                                        <p>The event which pulls a huge participation from the robotics enthusiasts, the participants are required to make an autonomous robot which can traverse through a path using the line following technique and complete the task specified in the problem statement. The team which finishes the task in the shortest time is the winner.</p>
+                                      </div>
+                                      <div id="waltz" class="tab-pane fade">
+                                        <p>This event also attracts the robotics enthusiasts wherein they are required to make an autonomous robot capable of traversing through a maze using the wall following techniques and accomplish the task as specified in the problem statement. The team whose robot completes the task successfully in the shortest time is declared the winner.</p>
+                                      </div>
+                                      <div id="automata" class="tab-pane fade">
+                                        <p>This is the flagship autonomous robotics design competition at Engineer which guarantees to challenge the brain buds of the participants. The teams are required to make a robot which can complete the specified task using a real-time video feed provided by an overhead camera and image processing to traverse through the arena. The team which finishes fastest is declared the winner.</p>
+                                      </div>
+                                      <div id="simplicity" class="tab-pane fade">
+                                        <p>Convoluted problems, simple solutions, Simplicity is an event that will lead you towards attaining crowning glory while solving problems related to signal processing and its applications. Welcome to a world of higher dimensions, hidden layers and unknown patterns all bound by simple logic.</p>
+                                      </div>
+                                      <div id="fox_hunt" class="tab-pane fade">
+                                        <p>It is an event on the lines of the traditional English pastime involving the tracking of a fox using trained hounds. In ENGINEER we follow an electronic version of the same wherein the FOX is a radio transmitter and hounds are our communication enthusiasts having a receiver in their hands for tracking down the fox. Everything is made from the scratch and the competition starts after hands on workshop where participants are taught about the basics of communication involved. This event requires zero pre requisites and hence interests a huge lot of communication enthusiasts.</p>
+                                      </div>
+                                      <div id="trade_off" class="tab-pane fade">
+                                        <p>This event is designed for testing the basic circuit designing skills of the participants using limited resources and logical thinking. It involves a lot of exercise for the brain and hence attracts a great deal of electronics fanatics. The pre requisites include a basic knowledge about the working of electronic components and instruments as well as an understanding about the circuit designing.</p>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
