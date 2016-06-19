@@ -7,16 +7,16 @@
     <div class="container-fluid main-content-container">
         <div class="row">
             <div class="col-lg-12 text-center" style="padding:20px !important; padding-top:0 !important;">
-                <h1 class="wow slideInDown pageHeading"><b>CONTACT US</b></h1>
+                <h1 class="wow slideInDown"><b>CONTACT US</b></h1>
                 <hr />
             </div>
         </div>
        <div class="row text-center" style="padding:20px !important;"  ng-repeat="member in members track by $index" ng-if="$index % 4 ==0">
                <div class="col-lg-3 col-md-3" ng-repeat="i in [$index, $index + 1, $index + 2,$index+3]">
                     <div ng-if="members[i]!=undefined">
-                       <div class="hexagon" style="background: url('images/team/{{::members[i].img}}');background-size:cover">
-                            <div class="content"></div>
-                       </div>
+                    <div class="team-img-wrapper">
+                       <img class="img-circle img-team wow flipInY" src="images/team/{{::members[i].img}}" />
+                    </div>
                        <h4 class="wow fadeInDown contact-name" ><b ng-bind="members[i].name"></b></h4>
                        <h5 class="wow fadeInUp contact-des"><b ng-bind="members[i].des"></b></h5>
 
