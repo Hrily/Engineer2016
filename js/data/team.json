@@ -12,11 +12,35 @@
         "email": "chiefcoordinator@engineer.org.in",
         "des": "Chief Coordinator"
     },{
+        "name": "Sucheth S Kuncham",
+        "img": "sucheth.jpg",
+        "fb": "https://www.facebook.com/rajayuv",
+        "email": "kunchamsucheth@gmail.com",
+        "des": "Chief Coordinator"
+    },{
+        "name": "Abhinav Choudhary",
+        "img": "abhinav.jpg",
+        "fb": " https://m.facebook.com/abhinav.choudhary.3511041",
+        "email": "pirthu3481@gmail.com",
+        "des": "Chief Coordinator"
+    },{
+        "name": "Vivek Nanjappa",
+        "img": "vivek.jpg",
+        "fb": "https://www.facebook.com/rajayuv",
+        "email": "events@engineer.org.in",
+        "des": "Events Coordinator"
+    },{
         "name": "Ravi Hasyagar",
         "img": "ravi.jpg",
         "fb": "https://www.facebook.com/ravi.hasyagar",
         "email": "exhibitions@engineer.org.in",
         "des": "Exhibitions Head"
+    },{
+        "name": "Prajwal Kutarekar",
+        "img": "prajwal.jpg",
+        "fb": "https://www.facebook.com/prajwalk27",
+        "email": "prajwalk24@gmail.com",
+        "des": "Creative Head"
     },{
         "name": "Yuvraj Singh Bawa",
         "img": "yuvraj.jpg",
@@ -25,7 +49,7 @@
         "des": "Website Lead"
     },{
         "name": "Yogesh Ghaturle",
-        "img": "yuvraj.jpg",
+        "img": "yogesh.jpg",
         "fb": "https://www.facebook.com/rajayuv",
         "email": "webmaster@engineer.org.in",
         "des": "Website Lead"

@@ -4,7 +4,7 @@ html,
 body {
     height: 100%;
     font-family: 'Varela Round', sans-serif,"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #00000b;
+    background: #d4e7e6;
 }
 
 
@@ -629,4 +629,66 @@ ul.social-buttons li:last-child { margin-right: 0; }
 .pageHeading
 {
     color:White;
+}
+.wrapper {
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+    padding:5px;
+    height:50px;
+}
+
+.list {
+    position:absolute;
+    left:0px;
+    top:0px;
+    min-width:3000px;
+    margin-left:12px;
+    margin-top:0px;
+}
+
+.list li{
+    display:table-cell;
+    position:relative;
+    text-align:center;
+    cursor:grab;
+    cursor:-webkit-grab;
+    color:#efefef;
+    vertical-align:middle;
+}
+
+.scroller {
+  text-align:center;
+  cursor:pointer;
+  display:none;
+  padding:7px;
+  padding-top:11px;
+  white-space:no-wrap;
+  vertical-align:middle;
+  background-color:#fff;
+}
+
+.scroller-right{
+  float:right;
+}
+
+.scroller-left {
+  float:left;
+}
+.tab-content {
+    margin:10px;
+}
+.events-pg {
+    padding:20px !important; padding-top:0 !important;
+}
+.events-pg-car{
+    margin:10px;margin-top:0px;
+}
+@media(max-width:400px) {
+    .events-pg {
+        padding:0 !important;
+    }
+    .events-pg-car{
+        margin:0px;
+    }
 }
