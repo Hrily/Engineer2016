@@ -17,6 +17,18 @@
         ////////////////
 
         function activate() {
+
+            $http({
+                method: 'GET',
+                url: 'js/data/events.json'
+            }).then(function successCallback(response) {
+                $scope.events = response.data;
+                $scope.eventTitles= ['CHEMICAL EVENTS','COMPUTER EVENTS','BUSINESS EVENTS','MINING EVENTS','SOCIALLY CONSCIOUS ENGINNERING','ASTRO EVENTS','MECHANICAL EVENTS','CIVIL EVENTS','MATERIALS EVENTS','TRONIX EVENTS'];
+                $('.nav-tabs').scrollingTabs();
+            }, function errorCallback(response) {
+                console.log(response);
+            });
+
             $('.carousel').carousel({
                 interval: false
             });
@@ -27,7 +39,7 @@
 
             //     maxWidth = Math.max.apply(null, widths);
 
-            //     $(".carousel-indicators.tabs>li").attr('style', 'width:'+ (maxWidth+15) +'px !important');
+            //     $(".carousel-indicators.tabs>li").attr('style EVENTS', 'width:'+ (maxWidth+15) +'px !important');
 
             // });
             $('.carousel-indicators-tabs>li').on('click', function() {
