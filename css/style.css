@@ -3,7 +3,7 @@
 html,
 body {
     height: 100%;
-    font-family: 'Varela Round', sans-serif, "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Lato';
     background: #d4e7e6;
 }
 
@@ -54,10 +54,8 @@ body {
     margin-left: 15px;
     margin-top: 15px;
 }
-
-#page-content-wrapper .sidebar-toggle {
-    margin-left: 0px;
-    margin-top: 0px;
+#top-bar .sidebar-toggle {
+    margin-left: 0;
 }
 
 .sidebar-toggle .icon-bar {
@@ -360,6 +358,10 @@ body {
     background: #dd4b39;
 }
 
+.lnkdn {
+    background: #0077B5;
+}
+
 .inst {
     margin: 4px;
     font-size: 17px !important;
@@ -391,6 +393,7 @@ body {
     background: white;
     box-shadow: 0 0 10px #333;
     margin-bottom: 30px;
+    position: relative;
 }
 
 
@@ -401,19 +404,22 @@ body {
 }*/
 
 .team-img-hover {
-    width: 160px;
-    height: 160px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
     border-radius: 80px;
     border: white solid 5px;
-    opacity: 0;
-    position: absolute;
-    top: 0;
+    opacity: 1;
+    right:0;
+    bottom:0;
     background: rgba(0, 0, 0, 0.5);
     transition: all 0.4s;
     cursor: pointer;
-    line-height: 160px;
+    line-height: 30px;
 }
-
+.team-img-hover > a {
+    margin:0 !important;
+}
 .team-img-hover:hover {
     opacity: 1;
 }
@@ -745,7 +751,7 @@ ul.social-buttons li:last-child {
 .home-nav li a {
     color:#5cfdff;
     opacity:0.8;
-    font-size:20px;
+    font-size:24px;
     margin-right:20px;
 }
 .home-nav li a:hover {
@@ -754,7 +760,10 @@ ul.social-buttons li:last-child {
 .home-nav li a:hover {
     opacity:1;
 }
-@media(max-width:400px) {
+#engiSVG{
+    width:300px; height:300px; margin-left:auto; margin-right:auto;
+}
+@media(max-width:460px) {
     .events-pg {
         padding: 0 !important;
     }
@@ -771,6 +780,23 @@ ul.social-buttons li:last-child {
         height: 300px !important;
     }
     #engi16 {
-        height:70px;
+        height:70px !important;
     }
+}
+@media(min-width:1400px) {
+    #penrose {
+        height: 600px;
+        width: 600px;
+        background-size: 181px;
+    }
+    #ring {
+        width: 600px !important;
+        height: 600px !important;
+    }
+    #engi16 {
+        height:200px !important;
+    }
+    #engiSVG{
+    width:500px; height:500px;
+}
 }

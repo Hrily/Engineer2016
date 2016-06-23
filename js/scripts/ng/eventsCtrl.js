@@ -4,11 +4,11 @@
     angular
         .module('myApp')
         .controller('eventsCtrl', eventsCtrl);
-
-    eventsCtrl.$inject = ['$scope', '$http'];
+    var myApp = angular.module('myApp');
+    eventsCtrl.$inject = ['$scope', '$http', '$rootScope'];
 
     /* @ngInject */
-    function eventsCtrl($scope, $http) {
+    function eventsCtrl($scope, $http, $rootScope) {
         var vm = this;
         vm.title = 'eventsCtrl';
 
@@ -18,12 +18,14 @@
 
         function activate() {
 
+
+
             $http({
                 method: 'GET',
                 url: 'js/data/events.json'
             }).then(function successCallback(response) {
                 $scope.events = response.data;
-                $scope.eventTitles= ['CHEMICAL EVENTS','COMPUTER EVENTS','BUSINESS EVENTS','MINING EVENTS','SOCIALLY CONSCIOUS ENGINNERING','ASTRO EVENTS','MECHANICAL EVENTS','CIVIL EVENTS','MATERIALS EVENTS','TRONIX EVENTS'];
+                $scope.eventTitles = ['CHEMICAL EVENTS', 'COMPUTER EVENTS', 'BUSINESS EVENTS', 'MINING EVENTS', 'SOCIALLY CONSCIOUS ENGINNERING', 'ASTRO EVENTS', 'MECHANICAL EVENTS', 'CIVIL EVENTS', 'MATERIALS EVENTS', 'TRONIX EVENTS'];
                 $('.nav-tabs').scrollingTabs();
             }, function errorCallback(response) {
                 console.log(response);
