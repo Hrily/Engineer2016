@@ -24,6 +24,30 @@
         "email": "pirthu3481@gmail.com",
         "des": "Chief Coordinator"
     },{
+        "name": "Yashpal Singh Ranawat",
+        "img": "yashpal.png",
+        "fb": "https://www.facebook.com/yashpalsingh.ranawat.1",
+        "email": "chiefcoordinator@engineer.org.in",
+        "des": " Engineer Joint Convenor"
+    },{
+        "name": "Samyak Jain",
+        "img": "samyak.png",
+        "fb": "https://www.facebook.com/samyak24jain?fref=ts",
+        "email": "samyak24jain@gmail.com",
+        "des": "Engineer Treasurer"
+    },{
+        "name": "Nitin Srinath",
+        "img": "nitin.png",
+        "fb": "http://www.facebook.com/profile.php?id=10000336406506",
+        "email": "marketinghead@engineer.org.in",
+        "des": "Marketing Head"
+    },{
+        "name": "Sonu kumar",
+        "img": "sonu.png",
+        "fb": "http://www.facebook.com/profile.php?id=10000336406506",
+        "email": "publicityhead@engineer.org.in",
+        "des": "Publicity Convenor"
+    },{
         "name": "Vivek Nanjappa",
         "img": "vivek.jpg",
         "fb": "https://www.facebook.com/rajayuv",
@@ -35,6 +59,12 @@
         "fb": "https://www.facebook.com/ravi.hasyagar",
         "email": "exhibitions@engineer.org.in",
         "des": "Exhibitions Head"
+    },{
+        "name": "Yogesh Ghaturle",
+        "img": "yogesh.jpg",
+        "fb": "https://www.facebook.com/rajayuv",
+        "email": "webmaster@engineer.org.in",
+        "des": "Website Lead"
     },{
         "name": "Prajwal Kutarekar",
         "img": "prajwal.jpg",
@@ -48,10 +78,40 @@
         "email": "webmaster@engineer.org.in",
         "des": "Website Lead"
     },{
-        "name": "Yogesh Ghaturle",
-        "img": "yogesh.jpg",
-        "fb": "https://www.facebook.com/rajayuv",
-        "email": "webmaster@engineer.org.in",
-        "des": "Website Lead"
+        "name": "Dhruv Paul",
+        "img": "dhruv.png",
+        "fb": "https://www.facebook.com/dhruv.paul.31",
+        "email": "superdhruv21@gmail.com",
+        "des": "Exhibition Co-ordinator"
+    },{
+        "name": "Neeharika Shetty",
+        "img": "niharika.png",
+        "fb": "http://www.facebook.com/neeharika.shetty.31",
+        "email": "sheety.neehar@gmail.com",
+        "des": "3yr Representative Publicity Team"
+    },{
+        "name": "Chandradeo",
+        "img": "chandradeo.png",
+        "fb": "http://www.facebook.com/neeharika.shetty.31",
+        "email": "chandradev12u@gmail.com",
+        "des": "Publicity Joint Convener"
+    },{
+        "name": "Avish Kaushik",
+        "img": "avish.png",
+        "fb": "http://www.facebook.com/makeawishhh",
+        "email": "liveavish95@gmail.com",
+        "des": "Publicity Joint Convenor"
+    },{
+        "name": "Anoop Singh",
+        "img": "anoop.png",
+        "fb": "http://www.facebook.com/neeharika.shetty.31",
+        "email": "anoopsingh635@gmail.com",
+        "des": "Publicity Coordinator"
+    },{
+        "name": "Sukriti Singh",
+        "img": "sukriti.png",
+        "fb": "https://www.facebook.com/sukriti.singh.54",
+        "email": "sukritisingh1221@gmail.com",
+        "des": "Exhibition Joint convener"
     }]
 }
